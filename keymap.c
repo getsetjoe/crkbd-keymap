@@ -199,8 +199,8 @@ bool oled_task_user(void) {
     oled_render_space();
     oled_render_led_state();
   } else {
-    // oled_render_logo();
-    // oled_scroll_left();
+    oled_render_logo();
+    oled_scroll_left();
   }
 
   return false;
