@@ -37,4 +37,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define OLED_FONT_H "keyboards/crkbd/keymaps/getsetjoe/glcdfont.c"
 
-#define TAPPING_TOGGLE 2
+#define TAPPING_TOGGLE 3
