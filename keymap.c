@@ -20,7 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #include "keymap_uk.h"
 
 #define CTALTDL LCA(KC_DEL)
-#define DELWORD C(KC_BSPC)
+#define CTLBKSP C(KC_BSPC)
+#define CTLDEL  C(KC_DEL)
 #define ALT_TAB A(KC_TAB)
 // VS Code shortcuts
 #define CTRL_A  C(KC_A)
@@ -100,7 +101,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_ADJUST] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      CTALTDL,  PG_TOP, OUTDENT,  ALT_UP,  INDENT, COPY_UP,                      XXXXXXX,   KC_F7,   KC_F8,   KC_F9,  KC_F11, DELWORD,
+      CTALTDL,  PG_TOP, OUTDENT,  ALT_UP,  INDENT, COPY_UP,                      CTLDEL,    KC_F7,   KC_F8,   KC_F9,  KC_F11, CTLBKSP,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       _______,  PG_END, CTL_LFT, ALT_DWN, CTL_RGT, COPY_DN,                      KC_UNDS,   KC_F4,   KC_F5,   KC_F6,  KC_F12, _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
