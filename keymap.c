@@ -30,6 +30,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CTL_RGT C(KC_RIGHT)
 #define ALT_UP  A(KC_UP)
 #define ALT_DWN A(KC_DOWN)
+#define ALT_LFT A(KC_LEFT)
+#define ALT_RGT A(KC_RIGHT)
 #define INDENT  C(KC_RBRC)
 #define OUTDENT C(KC_LBRC)
 #define PG_TOP  C(KC_HOME)
@@ -42,6 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PASTE   C(KC_V)
 #define COPY_UP S(A(KC_UP))
 #define COPY_DN S(A(KC_DOWN))
+#define EXP_SEL S(A(KC_RIGHT))
 // #define MTCHBRK C(S(KC_BSLS))
 // Windows shortcuts
 #define VDESK_L G(C(KC_LEFT))
@@ -93,7 +96,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       _______, KC_EXLM,   KC_LT,  KC_EQL,   KC_GT, ALT_TAB,                      KC_PIPE, KC_LPRN, KC_RPRN,   ARROW, KC_COLN, _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______, XXXXXXX, XXXXXXX, KC_COMM, KC_COLN,  CTRL_A,                      KC_HASH, KC_LBRC, KC_RBRC, XXXXXXX, KC_ASTR, _______,
+      _______, XXXXXXX, ALT_LFT, EXP_SEL, ALT_RGT,  CTRL_A,                      KC_HASH, KC_LBRC, KC_RBRC, XXXXXXX, KC_ASTR, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           _______, _______, _______,    _______, _______, _______
                                       //`--------------------------'  `--------------------------'
