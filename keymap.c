@@ -230,7 +230,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 }
 
 
-const uint16_t PROGMEM combo_vdesk_l[] = {KC_COMM, KC_COLN, COMBO_END};
+const uint16_t PROGMEM combo_vdesk_l[] = {EXP_SEL, ALT_RGT, COMBO_END};
 const uint16_t PROGMEM combo_vdesk_r[] = {KC_LBRC, KC_RBRC, COMBO_END};
 const uint16_t PROGMEM combo_tab_prev[] = {KC_CIRC, KC_DLR, COMBO_END};
 const uint16_t PROGMEM combo_tab_next[] = {KC_LCBR, KC_RCBR, COMBO_END};
