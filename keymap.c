@@ -26,12 +26,15 @@
 #define COPY_UP S(A(KC_UP))
 #define COPY_DN S(A(KC_DOWN))
 #define EXP_SEL S(A(KC_RIGHT))
+#define CTRL_P  C(KC_P)
+#define CTL_S_P C(S(KC_P))
 // #define MTCHBRK C(S(KC_BSLS))
 // Windows shortcuts
 #define VDESK_L G(C(KC_LEFT))
 #define VDESK_R G(C(KC_RIGHT))
 #define WIN_L A(KC_TAB)
 #define WIN_R S(A(KC_TAB))
+#define WIN_TAB G(KC_TAB)
 // Mod-taps
 #define RSH_SCL RSFT_T(KC_SCLN) // right-shift on hold, semicolon on tap
 
@@ -51,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,--------------------------------------------------------------.  ,--------------------------------------------------------------.
        KC_ESC,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B, RM_NEXT,    RM_TOGG,    KC_J,    KC_L,    KC_U,    KC_Y, KC_QUOT, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-      KC_LSFT,    KC_A,    KC_R,    KC_S,    KC_T,    KC_G, VDESK_L,    VDESK_R,    KC_M,    KC_N,    KC_E,    KC_I,    KC_O, RSH_SCL,
+      KC_LSFT,    KC_A,    KC_R,    KC_S,    KC_T,    KC_G,  CTRL_P,    WIN_TAB,    KC_M,    KC_N,    KC_E,    KC_I,    KC_O, RSH_SCL,
   //|--------+--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+--------+--------|
       KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,                         KC_K,    KC_H, KC_COMM,  KC_DOT, KC_SLSH,  KC_ENT,
   //|--------+--------+--------+--------+--------+--------+--------.  ,--------+--------+--------+--------+--------+--------+--------|
@@ -63,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,--------------------------------------------------------------.  ,--------------------------------------------------------------.
       _______, KC_PGUP, KC_HOME,   KC_UP,  KC_END, DELLINE, _______,    _______, KC_PLUS,    KC_7,    KC_8,    KC_9, KC_PERC, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-      _______, KC_PGDN, KC_LEFT, KC_DOWN,KC_RIGHT,  KC_TAB, _______,    _______, KC_MINS,    KC_4,    KC_5,    KC_6, KC_COLN, _______,
+      _______, KC_PGDN, KC_LEFT, KC_DOWN,KC_RIGHT,  KC_TAB, CTL_S_P,    _______, KC_MINS,    KC_4,    KC_5,    KC_6, KC_COLN, _______,
   //|--------+--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+--------+--------|
       _______,    UNDO,     CUT,    COPY,   PASTE,  CTRL_D,                       KC_DOT,    KC_1,    KC_2,    KC_3,    KC_0, _______,
   //|--------+--------+--------+--------+--------+--------+--------.  ,--------+--------+--------+--------+--------+--------+--------|
@@ -75,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,--------------------------------------------------------------.  ,--------------------------------------------------------------.
       _______, XXXXXXX,   KC_AT, KC_CIRC,  KC_DLR, XXXXXXX, _______,    _______, KC_AMPR, KC_LCBR, KC_RCBR, KC_SCLN,  KC_GRV, KC_DEL,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-      _______, KC_EXLM,   KC_LT,  KC_EQL,   KC_GT, ALT_TAB, _______,    _______, KC_PIPE, KC_LPRN, KC_RPRN,   ARROW, KC_COLN, _______,
+      _______, KC_EXLM,   KC_LT,  KC_EQL,   KC_GT, ALT_TAB, CTL_S_P,    _______, KC_PIPE, KC_LPRN, KC_RPRN,   ARROW, KC_COLN, _______,
   //|--------+--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+--------+--------|
       _______, XXXXXXX, ALT_LFT, EXP_SEL, ALT_RGT,  CTRL_A,                      KC_HASH, KC_LBRC, KC_RBRC, XXXXXXX, KC_ASTR, _______,
   //|--------+--------+--------+--------+--------+--------+--------.  ,--------+--------+--------+--------+--------+--------+--------|
