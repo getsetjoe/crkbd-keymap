@@ -1,3 +1,5 @@
+// Corne RP2040: Hold Q and plug in to enter bootloader
+
 #include QMK_KEYBOARD_H
 
 #define CTALTDL LCA(KC_DEL)
@@ -65,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_split_3x6_3_ex2(
   //,--------------------------------------------------------------.  ,--------------------------------------------------------------.
-       KC_TAB, KC_PGUP, KC_HOME,   KC_UP,  KC_END, DELLINE, _______,    _______, KC_PLUS,    KC_7,    KC_8,    KC_9, KC_PERC, _______,
+      ALT_TAB, KC_PGUP, KC_HOME,   KC_UP,  KC_END, DELLINE, _______,    _______, KC_PLUS,    KC_7,    KC_8,    KC_9, KC_PERC, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
       _______, KC_PGDN, KC_LEFT, KC_DOWN,KC_RIGHT,  KC_TAB, CTL_S_P,    _______, KC_MINS,    KC_4,    KC_5,    KC_6, KC_COLN, _______,
   //|--------+--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+--------+--------|
