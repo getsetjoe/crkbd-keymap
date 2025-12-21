@@ -6,6 +6,7 @@
 #define CTLBKSP C(KC_BSPC)
 #define CTLDEL  C(KC_DEL)
 #define ALT_TAB A(KC_TAB)
+#define ALT_ESC A(KC_ESC)
 // VS Code shortcuts
 #define CTRL_A  C(KC_A)
 #define CTRL_D  C(KC_D)
@@ -67,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_split_3x6_3_ex2(
   //,--------------------------------------------------------------.  ,--------------------------------------------------------------.
-      ALT_TAB, KC_PGUP, KC_HOME,   KC_UP,  KC_END, DELLINE, _______,    _______, KC_PLUS,    KC_7,    KC_8,    KC_9, KC_PERC, _______,
+      ALT_ESC, KC_PGUP, KC_HOME,   KC_UP,  KC_END, DELLINE, _______,    _______, KC_PLUS,    KC_7,    KC_8,    KC_9, KC_PERC, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
       _______, KC_PGDN, KC_LEFT, KC_DOWN,KC_RIGHT,  KC_TAB, CTL_S_P,    _______, KC_MINS,    KC_4,    KC_5,    KC_6, KC_COLN, _______,
   //|--------+--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+--------+--------|
